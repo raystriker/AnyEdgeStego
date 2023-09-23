@@ -9,8 +9,16 @@ class EdgeStego:
         """
         Initializes the object with the given operation and filename.
 
-        :param operation: A string representing the operation to be performed. Must be either "encode" or "decode".
-        :param input_filename: A string representing the path to the image file.
+        :param operation: A string representing the operation to be performed. Must be one of "encode", 
+                        "decode", or "inspect".
+        :param input_filename: A string representing the path to the input image file.
+        :param input_text: (Optional) A string representing the text to be encoded within the image. 
+                        Required if operation is "encode".
+        :param bits_to_decode: (Optional) The number of bits to decode from the image. Required if 
+                            operation is "decode".
+        :param output_filename: (Optional) A string representing the path to the output image file.
+                                Required if operation is "encode" or "inspect".
+
         """
         if operation == "encode":
             self.input_filename = input_filename
