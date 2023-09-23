@@ -41,7 +41,7 @@ python stego_cli.py inspect --input_path /path/to/image
 
 ## Limitations
 
-##### 1. The output (encoded) files must be a BMP file format or bitmap file
+##### 1. The output (encoded) file must be a BMP file format or bitmap file
 ##### 2. Only a certain amount of bits can be encoded, it's recommended to "inspect" the input image first
 
 
