@@ -1,7 +1,7 @@
 
 # AnyEdgeStego
 
-AnyEdgeStego is a steganography tool allowing users to hide text within the edges of an image, providing functionalities to encode text into an image, decode hidden text from an image, and inspect an image to determine the potential text it can conceal.
+AnyEdgeStego is a steganography tool allowing users to hide text within the edges of an image, providing functionalities to encode text into an image, decode hidden text from an image, and inspect an image to determine how much potential text it can conceal.
 
 ## Installation
 
