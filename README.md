@@ -20,7 +20,7 @@ pip install -r requirements.txt
 To encode text into an image, use the `encode` operation, specifying the input image path, the text to encode, and the output directory to save the modified image:
 
 ```sh
-python stego_cli.py encode --input_path /path/to/image --text "Secret Text" --output_dir /path/to/output_dir
+python stego_cli.py encode --input /path/to/image --text "Secret Text" --output /path/to/output_dir
 ```
 
 ### 2. Decoding Text from an Image
@@ -28,7 +28,7 @@ python stego_cli.py encode --input_path /path/to/image --text "Secret Text" --ou
 To decode the hidden text from an image, use the `decode` operation, specifying the input image path and the number of bits to decode:
 
 ```sh
-python stego_cli.py decode --input_path /path/to/image --bits NUMBER_OF_BITS
+python stego_cli.py decode --input /path/to/image --bits NUMBER_OF_BITS
 ```
 
 ### 3. Inspecting an Image
@@ -36,7 +36,7 @@ python stego_cli.py decode --input_path /path/to/image --bits NUMBER_OF_BITS
 To inspect an image and determine the number of bits that can be encoded, use the `inspect` operation, specifying the input image path:
 
 ```sh
-python stego_cli.py inspect --input_path /path/to/image
+python stego_cli.py inspect --input /path/to/image
 ```
 
 ## Limitations
@@ -51,13 +51,13 @@ Here are some example usages of the AnyEdgeStego tool:
 
 ```sh
 # Encoding example
-python stego_cli.py encode --input_path example.jpg --text "Hello, World!" --output_dir encoded_image.bmp
+python stego_cli.py encode --input example.jpg --text "Hello, World!" --output encoded_image.bmp
 
 # Decoding example
-python stego_cli.py decode --input_path encoded_image.bmp --bits 12
+python stego_cli.py decode --input encoded_image.bmp --bits 12
 
 # Inspecting example
-python stego_cli.py inspect --input_path example.bmp
+python stego_cli.py inspect --input example.bmp
 ```
 
 ## License
